@@ -8,14 +8,18 @@ function App() {
   const [text, setText] = useState('');
   return (
     <div className="App">
-      <textarea
-        id="editor"
-        onChange={(e) => {
-          setText(e.target.value);
-        }}
-        value={text}
-      ></textarea>
-      <div id="preview">{text}</div>
+      <div className="main-container">
+        <h1>Markdown Previewer</h1>
+        <textarea
+          id="editor"
+          className="text-area"
+          onChange={(e) => {
+            setText(e.target.value);
+          }}
+          value={text}
+        ></textarea>
+        <div id="preview">{text}</div>
+      </div>
     </div>
   );
 }
