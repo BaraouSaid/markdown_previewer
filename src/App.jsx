@@ -4,7 +4,20 @@ import viteLogo from '/vite.svg';
 import './App.css';
 
 function App() {
-  return <></>;
+  const [text, setText] = useText('');
+  return (
+    <div id="app">
+      <div>Hello World!!!</div>
+      <textarea
+        id="editor"
+        onChange={(e) => {
+          setText(e.target.value);
+        }}
+        value={text}
+      ></textarea>
+      <div id="preview">{text}</div>
+    </div>
+  );
 }
 
 export default App;
