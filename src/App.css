@@ -10,3 +10,10 @@ body {
   color: #292b2c;
   background-color: #fff;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

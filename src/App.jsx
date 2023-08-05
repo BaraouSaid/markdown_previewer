@@ -4,10 +4,9 @@ import viteLogo from '/vite.svg';
 import './App.css';
 
 function App() {
-  const [text, setText] = useText('');
+  const [text, setText] = useState('');
   return (
-    <div id="app">
-      <div>Hello World!!!</div>
+    <div className="App">
       <textarea
         id="editor"
         onChange={(e) => {
