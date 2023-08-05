@@ -21,6 +21,12 @@ body {
 
 .text-area {
   border-color: #00b4d8;
+  border-radius: 0.8rem;
+}
+
+.text-area:focus {
+  border: 2px solid #00b4d8;
+  background: #caf0f8;
 }
 
 .preview {

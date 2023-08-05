@@ -45,7 +45,7 @@ function App() {
           placeholder="type some text here!"
           rows="20"
           cols="80"
-          autoFocus
+          // autoFocus
           onChange={(e) => {
             setText(e.target.value);
           }}
