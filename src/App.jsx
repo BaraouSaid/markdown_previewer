@@ -11,23 +11,29 @@ function App() {
 
   # This is a heading
   ## This is a sub heading
-  [this is a link](https://www.example.com) <br><br>
-  \`this is some code : !not inspired && drinkCoffee()\`
-  \`\`\`
+  [this is a link](https://www.example.com)
+ 
+  Here's some code :
 
-{
+  \`!not inspired && drinkCoffee( )\`
+  
+  
+  A code block : 
+  \`\`\`
+  {
   "firstName": "John",
   "lastName": "Doe",
   "age": 25
 }
-
 \`\`\`
-
-- First item
+- First item of the list
 - Second item
 - Third item
-> This one is a blockquote <br><br>
-![alt text](/vite.svg) <br><br>
+
+> This one is a blockquote 
+
+![alt text](/vite.svg)
+
 **Powered by Vite.js**
   `);
 
@@ -44,7 +50,7 @@ function App() {
           className="text-area"
           placeholder="type some text here!"
           rows="20"
-          cols="80"
+          cols="60"
           // autoFocus
           onChange={(e) => {
             setText(e.target.value);
