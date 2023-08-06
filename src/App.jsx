@@ -1,15 +1,11 @@
 import { useState } from 'react';
 import { marked } from 'marked';
-import { JSDOM } from 'jsdom';
 import DOMPurify from 'dompurify';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 
-//  a heading element (H1 size), a sub heading element (H2 size), a link, inline code, a code block, a list item, a blockquote, an image, and bolded text.
-
 function App() {
-  const [text, setText] = useState(`
+  const [text, setText] = useState(
+    DOMPurify.sanitize(`
 
   # This is a heading
   ## This is a sub heading
@@ -37,7 +33,8 @@ function App() {
 ![alt text](/vite.svg)
 
 **Powered by Vite.js**
-  `);
+  `)
+  );
 
   marked.setOptions({
     breaks: true,
