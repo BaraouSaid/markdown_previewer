@@ -4,38 +4,35 @@ import DOMPurify from 'dompurify';
 import './App.css';
 
 function App() {
-  const [text, setText] = useState(
-    DOMPurify.sanitize(`
+  const [text, setText] = useState(`
 
   # This is a heading
   ## This is a sub heading
   [this is a link](https://www.example.com)   <i class="em em-point_left" aria-role="presentation" aria-label="WHITE LEFT POINTING BACKHAND INDEX"></i>
  
   Here's some code :
-
   \`!not inspired && drinkCoffee( )\` 
   
   
   A code block : 
-  \`\`\`
+ \`\`\`
   {
   "firstName": "John",
   "lastName": "Doe",
   "age": 25
 }
 \`\`\`
+A simple list : 
 - First item of the list
 - Second item
 - Third item
 
-> This one is a blockquote  
+ > blockquote
 
-![alt text](/vite.svg)
+![React Logo](src/assets/react.svg)
 
-**Powered by Vite.js**
-  `)
-  );
-
+**Powered by React**
+  `);
   marked.setOptions({
     breaks: true,
   });
@@ -60,7 +57,7 @@ function App() {
           id="preview"
           className="preview"
           dangerouslySetInnerHTML={{
-            __html: marked(text),
+            __html: DOMPurify.sanitize(marked(text)),
           }}
         ></div>
       </div>
