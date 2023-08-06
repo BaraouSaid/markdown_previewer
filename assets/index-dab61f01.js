@@ -108,7 +108,7 @@ A simple list :
 
  > blockquote
 
-![React Logo](src/assets/react.svg)
+![React Logo](/src/assets/react.svg)
 
 **Powered by React**
   `);return H.setOptions({breaks:!0}),qt.jsx("div",{className:"App",children:qt.jsxs("div",{className:"main-container",children:[qt.jsx("h1",{children:"Markdown Previewer"}),qt.jsx("textarea",{id:"editor",className:"text-area",placeholder:"type some text here!",rows:"20",cols:"60",onChange:n=>{t(n.target.value)},value:e}),qt.jsx("div",{id:"preview",className:"preview",dangerouslySetInnerHTML:{__html:Om.sanitize(H(e))}})]})})}co.createRoot(document.getElementById("root")).render(qt.jsx(jp.StrictMode,{children:qt.jsx(Dm,{})}));
