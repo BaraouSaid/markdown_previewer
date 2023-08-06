@@ -11,11 +11,11 @@ function App() {
 
   # This is a heading
   ## This is a sub heading
-  [this is a link](https://www.example.com)
+  [this is a link](https://www.example.com)   <i class="em em-point_left" aria-role="presentation" aria-label="WHITE LEFT POINTING BACKHAND INDEX"></i>
  
   Here's some code :
 
-  \`!not inspired && drinkCoffee( )\`
+  \`!not inspired && drinkCoffee( )\` 
   
   
   A code block : 
@@ -30,7 +30,7 @@ function App() {
 - Second item
 - Third item
 
-> This one is a blockquote 
+> This one is a blockquote  
 
 ![alt text](/vite.svg)
 
