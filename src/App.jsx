@@ -29,7 +29,7 @@ A simple list :
 
  > blockquote
 
-![React Logo](src/assets/react.svg)
+![React Logo](./src/assets/react.svg)
 
 **Powered by React**
   `);
